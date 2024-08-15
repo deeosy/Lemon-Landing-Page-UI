@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); */
+  </style> 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#ebfa9d', secondary:'#274e49', boldText: "#1a2236",
+          },
+          fontFamily: {
+            // 'sans': ['ui-sans-serif', 'system-ui', ...],
+            // 'serif': ['ui-serif', 'Georgia', ...],
+            // 'mono': ['ui-monospace', 'SFMono-Regular', ...],
+            rubik: ['"Rubik", sans-serif' ],
+            roboto: ['"Roboto", sans-serif'],
+            // jeva: ['"Playwrite HR Lijeva", cursive'],
+        },
+        screens: {
+          'sm': {'min': '350px', 'max': '550px'},
+          // => @media (min-width: 640px and max-width: 767px) { ... }
+
+          'md': {'min': '551px', 'max': '821px'},
+          // => @media (min-width: 768px and max-width: 1023px) { ... }
+
+          'lg': {'min': '822px', 'max': '1279px'},
+          // => @media (min-width: 1024px and max-width: 1279px) { ... }
+
+          'xl': {'min': '1280px', 'max': '1920px'},
+          // => @media (min-width: 1280px and max-width: 1535px) { ... }
+
+          // '2xl': {'min': '1536px'},
+          // => @media (min-width: 1536px) { ... }
+        },
+        }
+      }
+    }
+  </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="xl:w-[1440px] xl:mx-auto w-[98vw] px-[1vw]">
+  <section>
+    <div class="flex my-54 px-2 items-center justify-between font-medium h-[70px] shadow-xl ">
+      <div class="flex  items-center ">
+        <img src="./images/lemonLogo.png" alt="" class="h-[50px] xl:mr-8">
+        <a href="" class="mr-2 xl:mr-8">Overview</a>
+        <a href="" class="mr-2 xl:mr-8 ">Pages</a>
+        <a href="" class="mr-2 xl:mr-8 ">Services</a>
+        <a href="" class="mr-2 xl:mr-8 ">Contact</a> 
+      </div>
+      <div class="">
+        <img src="./images/online-purchase-svgrepo-com.svg" alt="" class="h-[30px] xl:absolute xl:left-[-999px]">
+        <a href="">
+          <button class="sm:absolute sm:left-[-999px] py-2 px-4 border border-[#000000/50] mr-4">Purchase Now</button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="flex sm:flex-col xl:justify-between xl:my-8 xl:w-[70%] xl:mx-auto xl:items-center">
+      <div class="my-5 px-3 flex flex-col xl:w-[48%]">
+        <div class="w-[70%]    ">
+          <p class="uppercase font-medium text-[14px] text-boldText   xl:text-[20px]">Meet Lemon</p>
+          <p class=" font-bold text-[32px] text-boldText my-2      xl:text-[56px] xl:leading-[78px]">Build a better site for your business.</p>
+          <p class="text-[12px] text-boldText w-[80%]    xl:text-[16px] xl:w-[100%]">[Short description here] blotem blipsum dolor sit bamat minim mollit non deserunt ullamco lorem ipsum.</p>
+        </div>
+        <div class="flex my-4 items-center xl:w-[100%]">
+          <button class="text-boldText bg-primary px-4 py-2 xl:text-[20px]">Buy Lemon</button>
+          <button class="text-boldText border-[1px] border-[#000000/50] p-[10px] shadow-xl  mx-3  "><img src="./images/diagonal-arrow-right-up-outline-svgrepo-com.svg" alt="" class="h-[16px] xl:h-[24px]"></button>
+          <p class="text-[12px] text-boldText font-medium  xl:text-[18px]">Our veiw in Designer</p>
+        </div>
+        <div class="flex gap-3 items-center">
+          <img src="./images/star-svgrepo-com.svg" alt="" class="h-[20px] bg-primary p-[1px] ">
+          <p class="opacity-70">Rated <span class="font-bold">4.9/5</span> from over <span class="font-bold">600</span> reviews.</p>
+        </div>      
+      </div>
+      <div class="my-2 xl:w-[48%]">
+        <img src="./images/heroSectionImage.png" alt="" class="">
+      </div>
+    </div>
+    <div class="my-10 flex flex-col mx-2    xl:flex-row xl:my-[100px] xl:w-[76%] xl:mx-auto">
+      <div class="flex items-center border-[1px] border-[#000000/50] py-4 px-6 ">
+        <div class="w-[15%] border-r-[1px] mr-4">
+          <img src="./images/tab-desktop-multiple-svgrepo-com.svg" alt="" class="h-[40px]">
+        </div>
+        <div class="">
+          <p>Loren ipsum dolor si amet, consectetur.</p>
+        </div>        
+      </div>
+      <div class="flex items-center border-[1px] border-[#000000/50] py-4 px-6 my-2 xl:my-[0px] xl:border-x-[0px]">
+        <div class="w-[15%] border-r-[1px] mr-4">
+          <img src="./images/Purple tab-desktop-multiple-svgrepo-com.svg" alt="" class="h-[40px]">
+        </div>
+        <div class="">
+          <p>Loren ipsum dolor si amet, consectetur.</p>
+        </div>        
+      </div>
+      <div class="flex items-center border-[1px] border-[#000000/50] py-4 px-6">
+        <div class="w-[15%] border-r-[1px] mr-4">
+          <img src="./images/Green tab-desktop-multiple-svgrepo-com.svg" alt="" class="h-[40px]">
+        </div>
+        <div class="">
+          <p>Loren ipsum dolor si amet, consectetur.</p>
+        </div>        
+      </div>
+    </div>
+
+  </section>
+  
+  
+
+
+
+
+</body>
+</html>
